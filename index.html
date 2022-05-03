@@ -209,9 +209,11 @@ function mouseUpEvent(x, y, button)
       if(result.Name == "circle")
         document.getElementById("buffer").value += String.fromCodePoint(0x1F62E);
       if(result.Name == "zig-zag")
-      document.getElementById("buffer").value += String.fromCodePoint(0x1F525);
+        document.getElementById("buffer").value += String.fromCodePoint(0x1F525);
       if(result.Name == "check")
-      document.getElementById("buffer").value += String.fromCodePoint(0x2705);
+        document.getElementById("buffer").value += String.fromCodePoint(0x2705);
+      if(result.Name == "caret")
+        document.getElementById("buffer").value += String.fromCodePoint(0x1F480);
 
       //drawText("Result: " + result.Name + " (" + round(result.Score,2) + ") in " + result.Time + " ms.");
     }
